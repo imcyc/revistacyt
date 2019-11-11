@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/revistacyt/static/css/main.b100e6da.chunk.css",
+    "main.js": "/revistacyt/static/js/main.11fddd91.chunk.js",
+    "main.js.map": "/revistacyt/static/js/main.11fddd91.chunk.js.map",
+    "runtime-main.js": "/revistacyt/static/js/runtime-main.35a20991.js",
+    "runtime-main.js.map": "/revistacyt/static/js/runtime-main.35a20991.js.map",
+    "static/js/2.d8d6a889.chunk.js": "/revistacyt/static/js/2.d8d6a889.chunk.js",
+    "static/js/2.d8d6a889.chunk.js.map": "/revistacyt/static/js/2.d8d6a889.chunk.js.map",
+    "index.html": "/revistacyt/index.html",
+    "precache-manifest.b0f04dda1a93ea294a7bcf8c2d9d1f4a.js": "/revistacyt/precache-manifest.b0f04dda1a93ea294a7bcf8c2d9d1f4a.js",
+    "service-worker.js": "/revistacyt/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/revistacyt/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/revistacyt/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35a20991.js",
+    "static/js/2.d8d6a889.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.11fddd91.chunk.js"
+  ]
+}
