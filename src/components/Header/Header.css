@@ -1,0 +1,21 @@
+.navbar {
+  border-bottom: 1px solid #000000;
+  background: rgba(1,1,1,0.95);
+}
+.navbar-brand img {
+  width: 150px;
+  margin-left: 10px;
+}
+.dropdown.nav-item {
+  border: 1px solid #ccc;
+}
+.form-inline .form-control {
+  flex: 1;
+}
+form.form-inline {
+  width: 100%;
+}
+.dropdown-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}

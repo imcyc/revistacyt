@@ -1,14 +1,27 @@
 import React from 'react';
+import { HashRouter, Route, Switch } from "react-router-dom";
 import './App.css';
-import { ReactComponent as Logo } from './images/logo.svg';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logo style={{width: '30em'}} />
-      </header>
-    </div>
+    <HashRouter basename={process.env.PUBLIC_URL}>
+      <div>
+        <Header />
+        <Switch>
+            <Route 
+              exact 
+              path="/" 
+              component={(props) => <Home 
+                {...props}
+              />}
+            />
+        </Switch>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
 
