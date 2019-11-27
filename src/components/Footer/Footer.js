@@ -9,7 +9,7 @@ class Footer extends Component {
       <footer className="footer">
         <div className="container">
           <p className="text-center p-0 m-0"><b>Revista Construcción y Tecnología en Concreto</b></p>
-          <p className="text-center"><Link to="#">Instituto Mexicano del Cemento y del Concreto A.C.</Link><br/>@ 2019 | Todos Los Derechos Reservados.</p>
+          <p className="text-center"><Link to="#">Instituto Mexicano del Cemento y del Concreto A.C.</Link><br/>@ 1959 - 2019 | Todos Los Derechos Reservados.</p>
           <ul className="social_footer_ul">
             <li><Link to="/"><i className="fa fa-facebook-f"></i></Link></li>
             <li><Link to="/"><i className="fa fa-twitter"></i></Link></li>

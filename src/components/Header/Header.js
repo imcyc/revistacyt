@@ -8,26 +8,35 @@ import { ReactComponent as Logo } from '../../images/logo.svg';
 import './Header.css';
 
 const Header = (props) => {
+    function formatDate(date) {
+      var monthNames = ["Enero", "Febrero", "Marzo","Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre","Noviembre", "Diciembre"];
+    
+      var horas = date.getHours();
+      var minutos = date.getMinutes();
+      var day = date.getDate();
+      var monthIndex = date.getMonth();
+      var year = date.getFullYear();
+
+      return `${horas}:${minutos} | ${day} de ${monthNames[monthIndex]} de ${year}`;
+    }
     return (
       <Navbar expand="lg">
         <Navbar.Brand>
           <Logo style={{width: '10em'}} />
         </Navbar.Brand>
-        {/*
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end buscador">
+          {/*
           <Form inline>
             <FormControl type="text" placeholder="BUSCAR CONTENIDOS" className="mr-sm-2" />
             <Button variant="outline-dark">BUSCAR</Button>
           </Form>
+          */}
         </Navbar.Collapse>
-        <Navbar.Collapse className="justify-content-end">
-          <NavDropdown id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1"><i class="lni-user"></i> Perfil de Usuario</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2"><i class="lni-exit-down"></i> Salir</NavDropdown.Item>
-          </NavDropdown>
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end fecha">
+          <h3>{formatDate(new Date())}</h3>
+          <p>Volumen 9 • Número 4 • Agosto 2019</p>
         </Navbar.Collapse>
-        */}
       </Navbar>
     );
 }

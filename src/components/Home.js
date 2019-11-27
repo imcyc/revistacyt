@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Redirect, Link } from "react-router-dom";
 import Carousel from './Carousel/Carousel';
 import './Home.css';
+
 
 class Home extends Component {
   constructor(props) {
@@ -10,13 +10,10 @@ class Home extends Component {
   }
   render() {
     return ( 
-      <div className="App">
+      <div className="App-header">
         <Carousel />
-        <header className="App-header">
-          <div className="wrapper fadeInDown" style={{zIndex: '10'}}>
-            
-          </div>
-        </header>
+        <h1>CONSTRUCCIÓN Y TECNOLOGÍA EN CONCRETO</h1>
+        <h3>Instituto Mexicano del Cemento y del Concreto A.C.</h3>
       </div>
     );
   }
