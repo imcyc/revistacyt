@@ -17,6 +17,19 @@
   color: white;
 }
 
+.App-header h1 {
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.App-header h3 {
+  font-family: 'Bebas Neue', cursive;
+  color: #ccc;
+  font-size: 1.5em;
+}
+
 .App-link {
   color: #09d3ac;
 }
@@ -297,7 +310,7 @@ input[type=text] {
 }
 
 .rojo {
-  color: #971319;
+  color: #971319 !important;
 }
 
 .container.loged i {

@@ -4,7 +4,9 @@ import './Carousel.css';
 
 function ControlledCarousel() {
   return (
-    <Carousel fade={true} controls={false}>
+    <>
+      <div className="filtro"></div>
+      <Carousel fade={true} controls={false}>
       <Carousel.Item>
         <img
           className="d-block w-100 min-vh-100"
@@ -34,6 +36,8 @@ function ControlledCarousel() {
         />
       </Carousel.Item>
     </Carousel>
+    </>
+    
   );
 }
 

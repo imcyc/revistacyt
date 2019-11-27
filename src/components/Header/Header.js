@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
@@ -22,7 +23,7 @@ const Header = (props) => {
     return (
       <Navbar expand="lg">
         <Navbar.Brand>
-          <Logo style={{width: '10em'}} />
+          <Link to="/"><Logo style={{width: '10em'}} /></Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end buscador">
@@ -34,8 +35,8 @@ const Header = (props) => {
           */}
         </Navbar.Collapse>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end fecha">
-          <h3>{formatDate(new Date())}</h3>
-          <p>Volumen 9 • Número 4 • Agosto 2019</p>
+          <h3 className="fechahora">{formatDate(new Date())}</h3>
+          <p className="fechahora">Volumen 9 • Número 4 • Agosto 2019</p>
         </Navbar.Collapse>
       </Navbar>
     );

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Carousel from './Carousel/Carousel';
 import './Home.css';
 
@@ -12,8 +13,9 @@ class Home extends Component {
     return ( 
       <div className="App-header">
         <Carousel />
-        <h1>CONSTRUCCIÓN Y TECNOLOGÍA EN CONCRETO</h1>
-        <h3>Instituto Mexicano del Cemento y del Concreto A.C.</h3>
+        <Link to="/panel"><h3>CONSTRUCCIÓN Y TECNOLOGÍA EN CONCRETO</h3></Link>
+        <Link to="/panel"><h1>El Puente HKZB,<br/>Alta ingeniería en tiempos modernos</h1></Link>
+        <Link to="/panel"><h3>OCTUBRE 2019</h3></Link>
       </div>
     );
   }

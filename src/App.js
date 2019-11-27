@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home';
+import Panel from './components/Panel/Panel';
 
 function App() {
   return (
@@ -15,6 +16,13 @@ function App() {
               exact 
               path="/" 
               component={(props) => <Home 
+                {...props}
+              />}
+            />
+            <Route 
+              exact 
+              path="/panel" 
+              component={(props) => <Panel 
                 {...props}
               />}
             />
