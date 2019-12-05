@@ -16,17 +16,21 @@
   min-height: 70px;
   text-decoration: none;
   transition: all 1s ease-in-out;
+  border: 1px solid #000;
 }
 
 .secciones:hover {
   background: #000;
 }
 
-.secciones h2 {
+.App-header .secciones h2 {
   text-align: center;
   font-weight: 100;
   font-size: 1em;
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: #ffffff;
+  font-family: 'Alatsi', sans-serif;
+  margin: 0;
+  padding: 0;
 }

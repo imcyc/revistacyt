@@ -14,7 +14,8 @@ class Home extends Component {
     return ( 
       <div className="App-header">
         <Carousel />
-        <Link to="/panel"><h1>El Puente HKZB,<br/>Alta ingeniería en tiempos modernos</h1></Link>
+        <Link to="/panel"><h1>El Puente HKZB,</h1></Link>
+        <Link to="/panel"><h2>Alta ingeniería en tiempos modernos</h2></Link>
         <Link to="/panel"><h3>ENERO 2020</h3></Link>
         <ItemCarousel />
       </div>
