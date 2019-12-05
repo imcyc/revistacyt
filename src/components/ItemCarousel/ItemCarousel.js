@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import ItemsCarousel from 'react-items-carousel';
 import './ItemCarousel.css';
 
@@ -40,12 +41,12 @@ class ItemCarousel extends Component {
           leftChevron={<i className="lni-angle-double-left"></i>}
         >
           {seccion.map((sec, index) =>
-            <div
+            <Link to="/panel"
               key={index}
               className="secciones"
             >
               <h2>{sec}</h2>
-            </div>
+            </Link>
           )}
           {/*
           {Array.from(new Array(10)).map((_, i) =>
