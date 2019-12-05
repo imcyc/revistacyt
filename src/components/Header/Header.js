@@ -35,8 +35,8 @@ const Header = (props) => {
           */}
         </Navbar.Collapse>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end fecha">
-          <h3 className="fechahora">{formatDate(new Date())}</h3>
-          <p className="fechahora">Volumen 9 • Número 4 • Agosto 2019</p>
+          <h3 className="fechahora">Volumen 9 • Número 4 • Enero 2020</h3>
+          <p className="fechahora">{formatDate(new Date())}</p>
         </Navbar.Collapse>
       </Navbar>
     );

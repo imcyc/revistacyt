@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ItemsCarousel from 'react-items-carousel';
+import './ItemCarousel.css';
 
 class ItemCarousel extends Component {
   constructor(props) {
@@ -10,8 +11,17 @@ class ItemCarousel extends Component {
     }
   }
   render() {
+    const seccion = [
+      "portada",
+      "editorial",
+      "buzón",
+      "noticias",
+      "posibilidades del concreto",
+      "ingeniería",
+      "tecnología"
+    ]
     return (
-      <div style={{"padding":"0 60px","maxWidth":"100%","margin":"0 auto"}}>
+      <div className="wrapsecciones">
         <ItemsCarousel
           infiniteLoop={false}
           gutter={12}
@@ -29,6 +39,15 @@ class ItemCarousel extends Component {
           rightChevron={<i className="lni-angle-double-right"></i>}
           leftChevron={<i className="lni-angle-double-left"></i>}
         >
+          {seccion.map((sec, index) =>
+            <div
+              key={index}
+              className="secciones"
+            >
+              <h2>{sec}</h2>
+            </div>
+          )}
+          {/*
           {Array.from(new Array(10)).map((_, i) =>
             <div
               key={i}
@@ -38,6 +57,7 @@ class ItemCarousel extends Component {
               }}
             />
           )}
+          */}
         </ItemsCarousel>
       </div>
     );
