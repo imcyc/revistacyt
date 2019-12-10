@@ -10,28 +10,28 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100 min-vh-100"
-          src="https://imcyc.github.io/revistacyt/images/bkg.jpg"
+          src="/images/bkg.jpg"
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100 min-vh-100"
-          src="https://imcyc.github.io/revistacyt/images/bkg1.jpg"
+          src="/images/bkg1.jpg"
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100 min-vh-100"
-          src="https://imcyc.github.io/revistacyt/images/bkg2.jpg"
+          src="/images/bkg2.jpg"
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100 min-vh-100"
-          src="https://imcyc.github.io/revistacyt/images/bkg3.jpg"
+          src="/images/bkg3.jpg"
           alt="Third slide"
         />
       </Carousel.Item>
