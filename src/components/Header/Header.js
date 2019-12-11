@@ -27,12 +27,12 @@ const Header = (props) => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end buscador">
-          {/*
+
           <Form inline>
             <FormControl type="text" placeholder="BUSCAR CONTENIDOS" className="mr-sm-2" />
             <Button variant="outline-dark">BUSCAR</Button>
           </Form>
-          */}
+
         </Navbar.Collapse>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end fecha">
           <h3 className="fechahora">Volumen 9 • Número 4 • Enero 2020</h3>

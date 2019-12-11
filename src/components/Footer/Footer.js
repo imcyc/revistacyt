@@ -9,7 +9,9 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <div className="container">
+          {/*
           <Contador />
+          */}
           <p className="text-center"><Link to="#">Instituto Mexicano del Cemento y del Concreto A.C.</Link><br/>@ 1959 - 2020 | Todos Los Derechos Reservados.</p>
           <ul className="social_footer_ul">
             <li><Link to="/"><i className="fa fa-facebook-f"></i></Link></li>

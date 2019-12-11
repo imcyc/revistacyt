@@ -12,36 +12,7 @@ class ItemCarousel extends Component {
     }
   }
   render() {
-    const seccionTotal = [
-      {
-        seccion: "portada",
-        intro: "Centro Rey Abdulaziz para la Cultura Mundial (Ithra), un potencial cultural del Golfo."
-      },
-      {
-        seccion: "editorial",
-        intro: "Cinco 'rocas' unidas internamente para formar un solo edificio."
-      },
-      {
-        seccion: "buzón",
-        intro: "Nuevos Comentarios realizados por nuestro público lector."
-      },
-      {
-        seccion: "noticias",
-        intro: "Propuesta para simplificar y homologar permisos de construcción."
-      },
-      {
-        seccion: "posibilidades del concreto",
-        intro: "Controles de calidad en la construcción en obras."
-      },
-      {
-        seccion: "internacional",
-        intro: "Torre Generali, un elemento futurista retorcido."
-      },
-      {
-        seccion: "estados",
-        intro: "Centro de BioIngeniería, construyendo para el futuro."
-      }
-    ]
+    
     return (
       <div className="wrapsecciones">
         <ItemsCarousel
@@ -61,7 +32,7 @@ class ItemCarousel extends Component {
           rightChevron={<i className="lni-angle-double-right"></i>}
           leftChevron={<i className="lni-angle-double-left"></i>}
         >
-          {seccionTotal.map((sec, index) =>
+          {this.props.seccionTotal.map((sec, index) =>
             <Link to="/panel"
               key={index}
               className="secciones"
