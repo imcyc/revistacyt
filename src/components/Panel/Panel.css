@@ -13,3 +13,13 @@ p.intro {
   font-size: 1em;
   text-align: justify;
 }
+
+.elPanel h1 {
+  font-size: 3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}

@@ -38,7 +38,7 @@ class ItemCarousel extends Component {
               className="secciones"
             >
               <div>
-                <img src="/images/bkg.jpg" alt="" title="" style={{width: '96%', margin: '5px'}} />
+                <img src="https://imcyc.github.io/revistacyt/images/bkg.jpg" alt="" title="" style={{width: '96%', margin: '5px'}} />
               </div>
               <div>
                 <h2>{sec.seccion}</h2>

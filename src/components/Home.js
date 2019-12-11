@@ -4,11 +4,11 @@ import Carousel from './Carousel/Carousel';
 import ItemCarousel from './ItemCarousel/ItemCarousel';
 import './Home.css';
 const imagesHome = [
-  '/images/bkg.jpg',
-  '/images/bkg1.jpg',
-  '/images/bkg2.jpg',
-  '/images/bkg3.jpg',
-  '/images/bkg4.jpg'
+  'https://imcyc.github.io/revistacyt/images/bkg.jpg',
+  'https://imcyc.github.io/revistacyt/images/bkg1.jpg',
+  'https://imcyc.github.io/revistacyt/images/bkg2.jpg',
+  'https://imcyc.github.io/revistacyt/images/bkg3.jpg',
+  'https://imcyc.github.io/revistacyt/images/bkg4.jpg'
 ];
 const seccionTotal = [
   {
