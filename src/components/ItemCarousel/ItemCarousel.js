@@ -33,12 +33,12 @@ class ItemCarousel extends Component {
           leftChevron={<i className="lni-angle-double-left"></i>}
         >
           {this.props.seccionTotal.map((sec, index) =>
-            <Link to="/panel"
+            <Link to={`/panel/${sec.seccion}`}
               key={index}
               className="secciones"
             >
               <div>
-                <img src="/images/bkg.jpg" alt="" title="" style={{width: '100px', margin: '5px'}} />
+                <img src="/images/bkg.jpg" alt="" title="" style={{width: '96%', margin: '5px'}} />
               </div>
               <div>
                 <h2>{sec.seccion}</h2>

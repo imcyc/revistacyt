@@ -16,3 +16,11 @@ code {
 a:hover {
   text-decoration: none;
 }
+
+input[type=text], input[type=email], input[type=password] {
+  border-radius: 0 !important;
+}
+
+.btn {
+  border-radius: 0 !important;
+}

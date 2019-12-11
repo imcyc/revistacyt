@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Panel from './components/Panel/Panel';
 
 function App() {
+  
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
       <div>
@@ -21,7 +22,7 @@ function App() {
             />
             <Route 
               exact 
-              path="/panel" 
+              path="/panel/:seccion" 
               component={(props) => <Panel 
                 {...props}
               />}

@@ -8,7 +8,7 @@ function ControlledCarousel(props) {
       <div className="filtro"></div>
       <Carousel fade={true} controls={false}>
         {props.imagesHome.map(image => (
-          <Carousel.Item>
+          <Carousel.Item key={image}>
             <img
               className="d-block w-100 min-vh-100"
               src={image}

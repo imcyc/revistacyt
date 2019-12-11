@@ -41,18 +41,13 @@ const seccionTotal = [
   }
 ]
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
-  
   render() {
     return ( 
       <div className="App-header">
         <Carousel imagesHome={imagesHome} />
-        <Link to="/panel"><h1>Ithra</h1></Link>
-        <Link to="/panel"><h2>Centro Rey Abdulaziz para la Cultura Mundial</h2></Link>
-        <Link to="/panel"><h3>ENERO 2020</h3></Link>
+        <Link to="/panel/portada"><h1>Ithra</h1></Link>
+        <Link to="/panel/portada"><h2>Centro Rey Abdulaziz para la Cultura Mundial</h2></Link>
+        <Link to="/panel/portada"><h3>ENERO 2020</h3></Link>
         <ItemCarousel seccionTotal={seccionTotal} />
       </div>
     );
