@@ -48,7 +48,7 @@ class Home extends Component {
         <Link to="/panel/portada"><h1>Ithra</h1></Link>
         <Link to="/panel/portada"><h2>Centro Rey Abdulaziz para la Cultura Mundial</h2></Link>
         <Link to="/panel/portada"><h3>ENERO 2020</h3></Link>
-        <ItemCarousel seccionTotal={seccionTotal} />
+        <ItemCarousel />
       </div>
     );
   }

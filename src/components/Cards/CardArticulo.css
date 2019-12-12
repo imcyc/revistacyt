@@ -1,0 +1,12 @@
+.card {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 0;
+}
+
+.card-title.h5 {
+  color: #ffffff;
+}
+
+.card-text {
+  color: #dedede;
+}

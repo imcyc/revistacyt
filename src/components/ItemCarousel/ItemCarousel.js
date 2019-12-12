@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Link } from "react-router-dom";
 import ItemsCarousel from 'react-items-carousel';
 import './ItemCarousel.css';
@@ -8,13 +9,22 @@ class ItemCarousel extends Component {
     super(props);
     this.state = {
       activeItemIndex: 0,
-      setActiveItemIndex: 0
+      setActiveItemIndex: 0,
+      noticias: []
     }
   }
+  componentDidMount() {
+    axios.get(`https://newsapi.org/v2/everything?q=construction&from=2019-12-11&to=2019-12-11&sortBy=popularity&apiKey=d6e94ae6348c44ab9b20c475613aae01`)
+      .then(response => {
+        const noticias = response.data.articles;
+        console.log(response.data.articles);
+        this.setState({ noticias });
+      })
+  }
   render() {
-    
     return (
       <div className="wrapsecciones">
+        
         <ItemsCarousel
           infiniteLoop={false}
           gutter={12}
@@ -32,31 +42,20 @@ class ItemCarousel extends Component {
           rightChevron={<i className="lni-angle-double-right"></i>}
           leftChevron={<i className="lni-angle-double-left"></i>}
         >
-          {this.props.seccionTotal.map((sec, index) =>
-            <Link to={`/panel/${sec.seccion}`}
-              key={index}
+          {this.state.noticias.map(item => (
+            <Link to={`/panel/noticias`}
+              key={item.author}
               className="secciones"
             >
-              <div>
-                <img src="https://imcyc.github.io/revistacyt/images/bkg.jpg" alt="" title="" style={{width: '96%', margin: '5px'}} />
+              <div style={{maxHeight: '100px', overflow: 'hidden', marginBottom: '10px'}}>
+                <img src={item.urlToImage} alt="" title="" style={{width: '96%', margin: '5px'}} />
               </div>
               <div>
-                <h2>{sec.seccion}</h2>
-                <p>{sec.intro}</p>
+                <h2 style={{maxHeight: '45px', marginBottom: '7px', overflow: 'hidden'}}>{item.title}</h2>
+                <p style={{maxHeight: '50px', marginBottom: '20px', overflow: 'hidden'}}>{item.description}</p>
               </div>
             </Link>
-          )}
-          {/*
-          {Array.from(new Array(10)).map((_, i) =>
-            <div
-              key={i}
-              style={{
-                height: 150,
-                background: 'url(https://placeimg.com/380/200/nature)'
-              }}
-            />
-          )}
-          */}
+          ))}
         </ItemsCarousel>
       </div>
     );
