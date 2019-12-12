@@ -18,15 +18,19 @@ class TickerNews extends Component {
         this.setState({ noticias });
       })
   }
+  GetRatesFromAPI = () => {
+    return (
+      <p style={{ whiteSpace: "nowrap" }}>
+        {this.state.noticias.join(" +++ ")} 
+        +++ 
+      </p>
+    )
+  }
   render(){
     return (
       <Ticker>
 
-          {({ index }) => (
-            <>
-              <p>This is the Headline of element #{index}!</p>
-            </>
-          )}
+          {this.GetRatesFromAPI}
 
           {/*
           {({ index }) => (
