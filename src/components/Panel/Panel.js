@@ -48,6 +48,7 @@ function Panel(props) {
                   <Buscador />
                 </Col>
               </Row>
+              <TickerNews />
               <div className="contenido">
                 <Row style={{height: '100%', overflow: 'hidden', padding: '10px'}}>
                 {data.map(item => (
@@ -82,7 +83,7 @@ function Panel(props) {
               </div>
             </Col>
           </Row>
-          <TickerNews />
+          
         </Container>
         
       </div>
