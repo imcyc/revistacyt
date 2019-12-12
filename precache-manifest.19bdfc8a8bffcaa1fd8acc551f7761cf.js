@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4873dcbbfcfdebd65dc4944aad7697da",
+    "revision": "e0c78ce66eddabebf5bfdf8ea4635721",
     "url": "/revistacyt/index.html"
   },
   {
-    "revision": "6bf1472d461c5b32824e",
+    "revision": "cdc8ccf2d7b042fc77ac",
     "url": "/revistacyt/static/css/2.259630c0.chunk.css"
   },
   {
-    "revision": "0f362f7b905c41cb40f5",
-    "url": "/revistacyt/static/css/main.9f0b7682.chunk.css"
+    "revision": "ea0c02203a8723b18f85",
+    "url": "/revistacyt/static/css/main.b99dfa67.chunk.css"
   },
   {
-    "revision": "6bf1472d461c5b32824e",
-    "url": "/revistacyt/static/js/2.4ae6f318.chunk.js"
+    "revision": "cdc8ccf2d7b042fc77ac",
+    "url": "/revistacyt/static/js/2.1f607600.chunk.js"
   },
   {
-    "revision": "0f362f7b905c41cb40f5",
-    "url": "/revistacyt/static/js/main.b9d95a27.chunk.js"
+    "revision": "ea0c02203a8723b18f85",
+    "url": "/revistacyt/static/js/main.209cb57f.chunk.js"
   },
   {
     "revision": "3e6a92a0c046763dc1e1",
