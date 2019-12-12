@@ -19,34 +19,13 @@ class TickerNews extends Component {
       })
   }
   GetRatesFromAPI = () => {
-    return (
-      <p style={{ whiteSpace: "nowrap" }}>
-        {this.state.noticias.join(" +++ ")} 
-        +++ 
-      </p>
-    )
+    return <p style={{ whiteSpace: "nowrap" }}>Placeholder</p>
   }
   render(){
+    console.log(this.state.noticias)
     return (
       <Ticker>
-
           {this.GetRatesFromAPI}
-
-          {/*
-          {({ index }) => (
-            <>
-              <p>This is the Headline of element #{index}!</p>
-            </>
-          )}
-          
-          {this.state.noticias.map((item, index) => (
-            ({ index }) => (
-                <>
-                    <p>This is the Headline of element #{index}!</p>
-                </>
-            )
-          ))}
-          */}
       </Ticker>
     )
   }
