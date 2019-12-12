@@ -48,3 +48,7 @@ form.form-inline {
 .fechahora {
   font-family: 'Bebas Neue', cursive;
 }
+
+.navbar-brand {
+  margin-left: 70px;
+}
