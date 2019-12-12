@@ -52,7 +52,6 @@ class ItemCarousel extends Component {
               </div>
               <div>
                 <h2 style={{maxHeight: '45px', marginBottom: '7px', overflow: 'hidden'}}>{item.title}</h2>
-                <p style={{maxHeight: '50px', marginBottom: '20px', overflow: 'hidden'}}>{item.description}</p>
               </div>
             </Link>
           ))}
