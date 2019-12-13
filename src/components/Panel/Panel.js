@@ -9,6 +9,7 @@ import Proceso from './Secciones/Proceso';
 import SideMenu from './SideMenu';
 import TickerNews from '../TickerNews/TickerNews';
 import CardArticulo from '../Cards/CardArticulo';
+import ItemCarouselContenido from '../ItemCarousel/ItemCarouselContenido';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Panel.css';
@@ -43,12 +44,17 @@ function Panel(props) {
               <TickerNews />
               <div className="contenido">
                 <Row style={{height: '100%', overflow: 'hidden', padding: '10px'}}>
+                  <ItemCarouselContenido />
+                </Row>
+                {/*
+                <Row style={{height: '100%', overflow: 'hidden', padding: '10px'}}>
                 {data.map(item => (
                   <Col xs={12} sm={4} md={4} lg={3}>
                     <CardArticulo key={item.author} title={item.title} description={item.description} urlToImage={item.urlToImage} />
                   </Col>
                 ))}
                 </Row>
+                */}
                 <Switch>
                   <Route 
                     exact 

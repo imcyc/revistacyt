@@ -2,8 +2,8 @@
 
   width: 100%;
   font-size: 1em;
-  background: rgba(0,0,0,0.4);
-  box-shadow: 0 0 10px #000000;
+  border-top: 1px solid #1B3958;
+  border-bottom: 1px solid #1B3958;
 }
 
 .ticker__element {

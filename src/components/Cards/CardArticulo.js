@@ -12,7 +12,7 @@ const CardArticulo = (props) => {
         <Card.Text>
           {props.description}
         </Card.Text>
-        <Button variant="secondary">LEER ARTÍCULO</Button>
+        <Button variant="secondary" style={{width: '100%'}}>LEER ARTÍCULO</Button>
       </Card.Body>
     </Card>
   );
