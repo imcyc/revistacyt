@@ -5,7 +5,7 @@ import './CardArticulo.css';
 
 const CardArticulo = (props) => {
   return(
-    <Card style={{ width: '18rem' }}>
+    <Card>
       <Card.Img style={{maxHeight: '100px', borderRadius: '0'}} variant="top" src={props.urlToImage} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>

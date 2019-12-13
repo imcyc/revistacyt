@@ -10,36 +10,6 @@ const imagesHome = [
   'https://imcyc.github.io/revistacyt/images/bkg3.jpg',
   'https://imcyc.github.io/revistacyt/images/bkg4.jpg'
 ];
-const seccionTotal = [
-  {
-    seccion: "portada",
-    intro: "Centro Rey Abdulaziz para la Cultura Mundial (Ithra), un potencial cultural del Golfo."
-  },
-  {
-    seccion: "editorial",
-    intro: "Cinco 'rocas' unidas internamente para formar un solo edificio."
-  },
-  {
-    seccion: "buzón",
-    intro: "Nuevos Comentarios realizados por nuestro público lector."
-  },
-  {
-    seccion: "noticias",
-    intro: "Propuesta para simplificar y homologar permisos de construcción."
-  },
-  {
-    seccion: "posibilidades del concreto",
-    intro: "Controles de calidad en la construcción en obras."
-  },
-  {
-    seccion: "internacional",
-    intro: "Torre Generali, un elemento futurista retorcido."
-  },
-  {
-    seccion: "estados",
-    intro: "Centro de BioIngeniería, construyendo para el futuro."
-  }
-]
 class Home extends Component {
   render() {
     return ( 

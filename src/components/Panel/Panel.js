@@ -13,14 +13,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Panel.css';
 
-const imagesHome = [
-  `${process.env.PUBLIC_URL}/images/bkg.jpg`,
-  `${process.env.PUBLIC_URL}/images/bkg1.jpg`,
-  `${process.env.PUBLIC_URL}/images/bkg2.jpg`,
-  `${process.env.PUBLIC_URL}/images/bkg3.jpg`,
-  `${process.env.PUBLIC_URL}/images/bkg4.jpg`
-];
-
 function Panel(props) {
     const [data, setData] = useState([]);
     let { seccion } = useParams();
@@ -52,8 +44,8 @@ function Panel(props) {
               <div className="contenido">
                 <Row style={{height: '100%', overflow: 'hidden', padding: '10px'}}>
                 {data.map(item => (
-                  <Col xs={12} sm={4} md={4} lg={3} key={item.author}>
-                    <CardArticulo title={item.title} description={item.description} urlToImage={item.urlToImage} />
+                  <Col xs={12} sm={4} md={4} lg={3}>
+                    <CardArticulo key={item.author} title={item.title} description={item.description} urlToImage={item.urlToImage} />
                   </Col>
                 ))}
                 </Row>

@@ -14,15 +14,12 @@ class TickerNews extends Component {
     axios.get(`https://newsapi.org/v2/everything?q=construction&from=2019-12-11&to=2019-12-11&sortBy=popularity&apiKey=d6e94ae6348c44ab9b20c475613aae01`)
       .then(response => {
         const noticias = response.data.articles;
-        console.log(response.data.articles['title']);
         this.setState({ noticias });
       })
   }
   GetRatesFromAPI = () => {
     const titulo = [];
-    this.state.noticias.map(noticia => {
-      titulo.push(noticia.title)
-    })
+    this.state.noticias.map(noticia => titulo.push(noticia.title));
     return <p style={{ whiteSpace: "nowrap" }}>{titulo.join(" - ")}</p>
   }
   render(){
