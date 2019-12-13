@@ -52,8 +52,8 @@ function Panel(props) {
               <div className="contenido">
                 <Row style={{height: '100%', overflow: 'hidden', padding: '10px'}}>
                 {data.map(item => (
-                  <Col xs={12} sm={4} md={4} lg={3}>
-                    <CardArticulo key={item.author} title={item.title} description={item.description} urlToImage={item.urlToImage} />
+                  <Col xs={12} sm={4} md={4} lg={3} key={item.author}>
+                    <CardArticulo title={item.title} description={item.description} urlToImage={item.urlToImage} />
                   </Col>
                 ))}
                 </Row>
