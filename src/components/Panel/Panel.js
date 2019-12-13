@@ -9,6 +9,7 @@ import Proceso from './Secciones/Proceso';
 import SideMenu from './SideMenu';
 import TickerNews from '../TickerNews/TickerNews';
 import CardArticulo from '../Cards/CardArticulo';
+import ItemCarousel from '../ItemCarousel/ItemCarousel';
 import ItemCarouselContenido from '../ItemCarousel/ItemCarouselContenido';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -41,8 +42,13 @@ function Panel(props) {
                   <Buscador />
                 </Col>
               </Row>
-              <TickerNews />
+              <TickerNews title={data.map(item => (item.title))} />
               <div className="contenido">
+                <Row className="tickerCarou">
+                  <Col xs={12} md={12}>
+                    <ItemCarousel/>
+                  </Col>
+                </Row>
                 <Row style={{height: '100%', overflow: 'hidden', padding: '10px'}}>
                   <ItemCarouselContenido />
                 </Row>

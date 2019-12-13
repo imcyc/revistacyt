@@ -24,7 +24,6 @@ class ItemCarousel extends Component {
   render() {
     return (
       <div className="wrapsecciones">
-        
         <ItemsCarousel
           infiniteLoop={false}
           gutter={12}
