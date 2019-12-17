@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/revistacyt/static/css/main.c765315f.chunk.css",
-    "main.js": "/revistacyt/static/js/main.ad222218.chunk.js",
-    "main.js.map": "/revistacyt/static/js/main.ad222218.chunk.js.map",
+    "main.js": "/revistacyt/static/js/main.a191cd5a.chunk.js",
+    "main.js.map": "/revistacyt/static/js/main.a191cd5a.chunk.js.map",
     "runtime-main.js": "/revistacyt/static/js/runtime-main.35a20991.js",
     "runtime-main.js.map": "/revistacyt/static/js/runtime-main.35a20991.js.map",
     "static/css/2.f82533ec.chunk.css": "/revistacyt/static/css/2.f82533ec.chunk.css",
     "static/js/2.ee26ff9e.chunk.js": "/revistacyt/static/js/2.ee26ff9e.chunk.js",
     "static/js/2.ee26ff9e.chunk.js.map": "/revistacyt/static/js/2.ee26ff9e.chunk.js.map",
     "index.html": "/revistacyt/index.html",
-    "precache-manifest.076ae9af9bb6f88fd40e457cccdfa455.js": "/revistacyt/precache-manifest.076ae9af9bb6f88fd40e457cccdfa455.js",
+    "precache-manifest.0e4a3239bda2cf1c3f45f74d3a627277.js": "/revistacyt/precache-manifest.0e4a3239bda2cf1c3f45f74d3a627277.js",
     "service-worker.js": "/revistacyt/service-worker.js",
     "static/css/2.f82533ec.chunk.css.map": "/revistacyt/static/css/2.f82533ec.chunk.css.map",
     "static/css/main.c765315f.chunk.css.map": "/revistacyt/static/css/main.c765315f.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.f82533ec.chunk.css",
     "static/js/2.ee26ff9e.chunk.js",
     "static/css/main.c765315f.chunk.css",
-    "static/js/main.ad222218.chunk.js"
+    "static/js/main.a191cd5a.chunk.js"
   ]
 }
