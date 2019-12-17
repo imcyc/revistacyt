@@ -31,7 +31,7 @@ class ItemCarousel extends Component {
           chevronWidth={60}
           disableSwipe={false}
           alwaysShowChevrons={false}
-          numberOfCards={4}
+          numberOfCards={5}
           slidesToScroll={1}
           outsideChevron={true}
           showSlither={false}
