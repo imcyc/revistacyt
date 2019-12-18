@@ -1,0 +1,6 @@
+.form-inline .form-control {
+  padding: 10px 10px;
+}
+.form-inline .form-control:focus {
+  color:#1E3E61 !important;
+}

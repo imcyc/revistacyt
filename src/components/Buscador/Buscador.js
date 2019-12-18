@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import './Buscador.css';
 
 const Buscador = (props) => {
   const laUra = props.location.pathname;
