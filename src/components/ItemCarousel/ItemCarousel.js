@@ -47,7 +47,7 @@ class ItemCarousel extends Component {
               className="secciones"
             >
               <div style={{maxHeight: '100px', overflow: 'hidden', marginBottom: '10px'}}>
-                <img src={item.urlToImage} alt="" title="" style={{width: '96%', margin: '5px'}} />
+                <img src={item.urlToImage} alt="" title="" style={{width: '100%', margin: '5px'}} />
               </div>
               <div>
                 <h2 style={{maxHeight: '45px', marginBottom: '7px', overflow: 'hidden'}}>{item.title}</h2>
