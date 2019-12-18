@@ -21,6 +21,11 @@ class ItemCarousel extends Component {
         this.setState({ noticias });
       })
   }
+  fecha = (fec) => {
+    console.log('La fecha: ' + fec);
+    var mydate = new Date(fec);
+    return mydate.toDateString();
+  }
   render() {
     return (
       <div className="wrapsecciones">
@@ -31,7 +36,7 @@ class ItemCarousel extends Component {
           chevronWidth={60}
           disableSwipe={false}
           alwaysShowChevrons={false}
-          numberOfCards={5}
+          numberOfCards={4}
           slidesToScroll={1}
           outsideChevron={true}
           showSlither={false}
@@ -51,6 +56,7 @@ class ItemCarousel extends Component {
               </div>
               <div>
                 <h2 style={{maxHeight: '45px', marginBottom: '7px', overflow: 'hidden'}}>{item.title}</h2>
+                <p>{this.fecha(item.publishedAt)}</p>
               </div>
             </Link>
           ))}
