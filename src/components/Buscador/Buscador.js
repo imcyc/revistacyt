@@ -8,14 +8,17 @@ import './Buscador.css';
 const Buscador = (props) => {
   const laUra = props.location.pathname;
   const panel = laUra.indexOf("panel");
-  console.log(panel);
+  const buscador = (e) => {
+    e.preventDefault();
+    console.log(e.target.textoBuscador.value);
+  }
   return (
     <div>
       {(panel === 1) &&
         (
-          <Form inline>
-            <FormControl type="text" placeholder="BUSCAR CONTENIDOS" className="mr-sm-0" />
-            <Button variant="outline-light">BUSCAR</Button>
+          <Form inline onSubmit={buscador}>
+            <FormControl name="textoBuscador" type="text" placeholder="BUSCAR CONTENIDOS" className="mr-sm-0" />
+            <Button type="submit" variant="outline-light">BUSCAR</Button>
           </Form>
         )
       }
