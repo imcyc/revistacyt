@@ -61,3 +61,15 @@
   padding-left: 5px;
   padding-top: 5px;
 }
+
+.cajaimagen {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center center;
+}
+
+.cajaimagen img {
+  text-align: center;
+  display: block;
+}

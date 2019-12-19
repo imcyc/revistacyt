@@ -8,6 +8,7 @@ import './Buscador.css';
 const Buscador = (props) => {
   const laUra = props.location.pathname;
   const panel = laUra.indexOf("panel");
+  
   const buscador = (e) => {
     e.preventDefault();
     console.log(e.target.textoBuscador.value);
