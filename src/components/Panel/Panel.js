@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch, withRouter, useParams } from "react-router-dom";
+import LineIcon from 'react-lineicons';
 import Buscador from '../Buscador/Buscador';
 import axios from 'axios';
 import Container from 'react-bootstrap/Container';
@@ -36,7 +37,7 @@ function Panel(props) {
               <SideMenu />
               <Row>
                 <Col xs={6} md={6}>
-                  <h1><i className="lni-arrow-right-circle" style={{fontSize: '.75em'}}></i> {seccion}</h1>
+                  <h1><i class="lni-chevron-right" style={{fontSize: '.75em'}}></i> {seccion}</h1>
                 </Col>
                 <Col xs={6} md={6}>
                   <Buscador />
