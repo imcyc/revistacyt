@@ -52,7 +52,6 @@
   background: rgba(0,0,0,0.2);
   max-height: 50px;
   overflow: hidden;
-  border: 2px solid #1A3756;
 }
 .tickerCarou .secciones h2 {
   font-size: 0.7em;

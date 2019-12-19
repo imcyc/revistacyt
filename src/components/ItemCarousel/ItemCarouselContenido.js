@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/Button'
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import ItemsCarousel from 'react-items-carousel';
@@ -57,6 +58,7 @@ class ItemCarouselContenido extends Component {
                 <h3>{item.description}</h3>
                 <hr/>
                 <p>{item.description}</p>
+                <Button variant="dark" className="pull-right mr-4">LEER CONTENIDO COMPLETO</Button>
               </div>
             </Link>
           ))}
