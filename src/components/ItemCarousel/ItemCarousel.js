@@ -57,7 +57,7 @@ class ItemCarousel extends Component {
                 </div>
               </div>
               <div>
-              <p style={{fontSize: '0.5em', padding: '0', margin: '0', paddingLeft:'5px'}}>{this.fecha(item.publishedAt)}</p>
+              <p style={{fontSize: '0.3em', padding: '0', margin: '0', paddingLeft:'10px'}}>{this.fecha(item.publishedAt)}</p>
                 <h2 style={{maxHeight: '45px', marginBottom: '7px', overflow: 'hidden'}}>{item.title}</h2>
               </div>
             </Link>
